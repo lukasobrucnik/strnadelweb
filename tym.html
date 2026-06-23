@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tým — Strnadel Motorsport</title>
+  <meta name="description" content="Strnadel Motorsport — český kartingový tým kategorie Rotax. Příprava, technika a závodní mentalita od tréninku po finále.">
+  <meta name="theme-color" content="#0C0D10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Barlow+Semi+Condensed:wght@500;600;700&family=Saira:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styl.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="header">
+    <div class="header__obal">
+      <a class="logo" href="index.html" aria-label="Strnadel Motorsport — domů">
+        <img class="logo__img" src="fotky/logo.png" alt="Strnadel Motorsport" onerror="this.closest('.logo').classList.add('logo--text')">
+      </a>
+      <button class="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="hlavni-nav"><span></span></button>
+      <nav class="nav" id="hlavni-nav" aria-label="Hlavní navigace">
+        <a class="nav__odkaz" href="tym.html" aria-current="page">Tým</a>
+        <a class="nav__odkaz" href="serialy.html">Seriály</a>
+        <a class="nav__odkaz" href="galerie.html">Galerie</a>
+        <a class="nav__odkaz" href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+    <section class="pagehero" aria-label="Tým">
+      <div class="pagehero__cara" aria-hidden="true"></div>
+      <div class="obal pagehero__obsah">
+        <span class="nadtitulek">Kdo jsme</span>
+        <h1 class="nadpis nadpis--velky">Tým, který<br>závodí naplno</h1>
+        <p class="pagehero__popis">Spojujeme technickou přípravu, datovou analýzu a závodní mentalitu. Každý detail karty ladíme tak, aby na trati nechybělo nic.</p>
+      </div>
+    </section>
+
+    <!-- O TÝMU -->
+    <section class="sekce" aria-label="O týmu">
+      <div class="obal about">
+        <div class="reveal">
+          <span class="nadtitulek">Naše filozofie</span>
+          <h2 class="nadpis">Žádné<br>kompromisy.</h2>
+        </div>
+        <div class="about__text reveal">
+          <p>Strnadel Motorsport je český kartingový tým, který se dlouhodobě věnuje kategorii <strong>Rotax</strong>. Pracujeme s daty z každého kola, pečlivou přípravou materiálu a důslednou prací v boxech.</p>
+          <p class="tlumene">Startujeme v domácím Moravském poháru, středoevropské zóně Rotax Max Challenge i ve vybraných závodech evropského šampionátu. Naším jazykem jsou výsledky, ne sliby.</p>
+          <div class="hodnoty">
+            <div class="hodnota"><div class="hodnota__cislo">01</div><div class="hodnota__nazev">Příprava</div><p class="hodnota__popis">Pečlivá technická příprava motoru i podvozku před každým závodním víkendem.</p></div>
+            <div class="hodnota"><div class="hodnota__cislo">02</div><div class="hodnota__nazev">Technika</div><p class="hodnota__popis">Špičkový materiál, servis a data z každého kola — žádné kompromisy na trati.</p></div>
+            <div class="hodnota"><div class="hodnota__cislo">03</div><div class="hodnota__nazev">Závodění</div><p class="hodnota__popis">Naplno, čistě a s respektem. Závodní mentalita od tréninku po finále.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTIKY -->
+    <section class="staty" aria-label="Tým v číslech">
+      <div class="obal">
+        <div class="staty__grid">
+          <div class="stat"><div class="stat__hodnota">ROTAX</div><div class="stat__popisek">Naše kategorie</div></div>
+          <div class="stat"><div class="stat__hodnota">3</div><div class="stat__popisek">Závodní seriály</div></div>
+          <div class="stat"><div class="stat__hodnota">ČR · EU</div><div class="stat__popisek">Působnost</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SESTAVA -->
+    <section class="sekce" style="background:var(--bg);" aria-label="Sestava">
+      <div class="obal">
+        <div class="reveal" style="margin-bottom:48px;">
+          <span class="nadtitulek">Sestava</span>
+          <h2 class="nadpis">Lidé za výsledky</h2>
+        </div>
+        <div class="serie-grid">
+          <div class="serie reveal" style="min-height:auto;">
+            <div class="media" data-nazev="fotky/tym-1.jpg" style="aspect-ratio:4/3;margin:-34px -30px 24px;border:0;border-bottom:1px solid var(--line-2);"><img src="fotky/tym-1.jpg" alt="Jezdec" onerror="this.style.display='none'"></div>
+            <h3 class="serie__nazev" style="font-size:24px;">Jméno Příjmení</h3>
+            <div class="serie__sub">Jezdec · Rotax Max</div>
+            <p class="serie__popis">Krátké představení jezdce, jeho startovní číslo a největší úspěchy.</p>
+          </div>
+          <div class="serie reveal" style="min-height:auto;">
+            <div class="media" data-nazev="fotky/tym-2.jpg" style="aspect-ratio:4/3;margin:-34px -30px 24px;border:0;border-bottom:1px solid var(--line-2);"><img src="fotky/tym-2.jpg" alt="Týmový manažer" onerror="this.style.display='none'"></div>
+            <h3 class="serie__nazev" style="font-size:24px;">Jméno Příjmení</h3>
+            <div class="serie__sub">Týmový manažer</div>
+            <p class="serie__popis">Strategie závodního víkendu, organizace a komunikace s partnery.</p>
+          </div>
+          <div class="serie reveal" style="min-height:auto;">
+            <div class="media" data-nazev="fotky/tym-3.jpg" style="aspect-ratio:4/3;margin:-34px -30px 24px;border:0;border-bottom:1px solid var(--line-2);"><img src="fotky/tym-3.jpg" alt="Mechanik" onerror="this.style.display='none'"></div>
+            <h3 class="serie__nazev" style="font-size:24px;">Jméno Příjmení</h3>
+            <div class="serie__sub">Mechanik</div>
+            <p class="serie__popis">Příprava motoru i podvozku a servis karty mezi jízdami.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="obal footer__obal">
+      <a class="logo" href="index.html" aria-label="Strnadel Motorsport — domů"><img class="logo__img" src="fotky/logo.png" alt="Strnadel Motorsport" style="opacity:.92" onerror="this.closest('.logo').classList.add('logo--text')"></a>
+      <div class="footer__serie"><span>MSR Karting</span><span>RMC CE Zone</span><span>RMC Euro Trophy</span></div>
+      <span class="footer__copy">© <span data-rok>2026</span> Strnadel Motorsport</span>
+    </div>
+  </footer>
+
+  <script src="js/skript.js"></script>
+</body>
+</html>

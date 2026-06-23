@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie — Strnadel Motorsport</title>
+  <meta name="description" content="Fotogalerie týmu Strnadel Motorsport — z paddocku, tratí a závodních víkendů.">
+  <meta name="theme-color" content="#0C0D10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Barlow+Semi+Condensed:wght@500;600;700&family=Saira:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styl.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="header">
+    <div class="header__obal">
+      <a class="logo" href="index.html" aria-label="Strnadel Motorsport — domů"><img class="logo__img" src="fotky/logo.png" alt="Strnadel Motorsport" onerror="this.closest('.logo').classList.add('logo--text')"></a>
+      <button class="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="hlavni-nav"><span></span></button>
+      <nav class="nav" id="hlavni-nav" aria-label="Hlavní navigace">
+        <a class="nav__odkaz" href="tym.html">Tým</a>
+        <a class="nav__odkaz" href="serialy.html">Seriály</a>
+        <a class="nav__odkaz" href="galerie.html" aria-current="page">Galerie</a>
+        <a class="nav__odkaz" href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+    <section class="pagehero" aria-label="Galerie">
+      <div class="pagehero__cara" aria-hidden="true"></div>
+      <div class="obal pagehero__obsah">
+        <span class="nadtitulek">Z paddocku</span>
+        <h1 class="nadpis nadpis--velky">Galerie</h1>
+        <p class="pagehero__popis">Momenty z tratí, boxů a závodních víkendů. Kliknutím na fotku ji zvětšíte.</p>
+      </div>
+    </section>
+
+    <section class="sekce" style="background:var(--bg);" aria-label="Fotogalerie">
+      <div class="obal">
+        <div class="galerie-grid">
+          <div class="media g-velka" data-nazev="fotky/galerie-1.jpg" data-lightbox><img src="fotky/galerie-1.jpg" alt="Karty na startovním roštu" onerror="this.style.display='none'"></div>
+          <div class="media g-vyska" data-nazev="fotky/galerie-2.jpg" data-lightbox><img src="fotky/galerie-2.jpg" alt="Servis karty v boxech" onerror="this.style.display='none'"></div>
+          <div class="media" data-nazev="fotky/galerie-3.jpg" data-lightbox><img src="fotky/galerie-3.jpg" alt="Detail karty" onerror="this.style.display='none'"></div>
+          <div class="media" data-nazev="fotky/galerie-4.jpg" data-lightbox><img src="fotky/galerie-4.jpg" alt="Jezdci po závodě" onerror="this.style.display='none'"></div>
+          <div class="media g-sirka" data-nazev="fotky/galerie-5.jpg" data-lightbox><img src="fotky/galerie-5.jpg" alt="Týmová fotka" onerror="this.style.display='none'"></div>
+          <div class="media" data-nazev="fotky/galerie-6.jpg" data-lightbox><img src="fotky/galerie-6.jpg" alt="Stan týmu večer" onerror="this.style.display='none'"></div>
+          <div class="media" data-nazev="fotky/galerie-7.jpg" data-lightbox><img src="fotky/galerie-7.jpg" alt="Paddock týmu" onerror="this.style.display='none'"></div>
+          <div class="media" data-nazev="fotky/galerie-8.jpg" data-lightbox><img src="fotky/galerie-8.jpg" alt="Další fotka" onerror="this.style.display='none'"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Zvětšená fotka">
+    <button class="lightbox__zavrit" aria-label="Zavřít">×</button>
+    <img src="" alt="">
+  </div>
+
+  <footer class="footer">
+    <div class="obal footer__obal">
+      <a class="logo" href="index.html" aria-label="Strnadel Motorsport — domů"><img class="logo__img" src="fotky/logo.png" alt="Strnadel Motorsport" style="opacity:.92" onerror="this.closest('.logo').classList.add('logo--text')"></a>
+      <div class="footer__serie"><span>MSR Karting</span><span>RMC CE Zone</span><span>RMC Euro Trophy</span></div>
+      <span class="footer__copy">© <span data-rok>2026</span> Strnadel Motorsport</span>
+    </div>
+  </footer>
+
+  <script src="js/skript.js"></script>
+</body>
+</html>
