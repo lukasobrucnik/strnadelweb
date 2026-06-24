@@ -8,6 +8,42 @@ Produkční web pro karting team Strnadel Motorsport. Postaveno na Stitch design
 - Tailwind CSS (design tokeny — racing-blue, phosphor-yellow, racing-red)
 - Framer Motion (scroll reveal, parallax hero, staggered animace, page transition)
 
+## Vlastní doména (strnadelmotorsport.cz)
+
+`base` ve `vite.config.js` je nastaven na `/` (web běží z rootu domény) a v
+`public/CNAME` je uložen název domény — při každém `npm run deploy` se automaticky
+zahrne do nasazení.
+
+### Nastavení DNS u WEDOSu
+V administraci domény u WEDOSu (DNS záznamy) nastav:
+
+| Typ   | Název | Hodnota                          |
+|-------|-------|-----------------------------------|
+| A     | @     | 185.199.108.153                   |
+| A     | @     | 185.199.109.153                   |
+| A     | @     | 185.199.110.153                   |
+| A     | @     | 185.199.111.153                   |
+| CNAME | www   | lukasobrucnik.github.io           |
+
+(Toto jsou oficiální IP adresy GitHub Pages — nemění se.)
+
+### Nastavení na GitHubu
+**Settings → Pages → Custom domain** → zadej `strnadelmotorsport.cz` → Save.
+Po ověření DNS (může trvat několik minut až hodin) zaškrtni **Enforce HTTPS**.
+
+## Google Search Console
+
+1. Na [search.google.com/search-console](https://search.google.com/search-console)
+   přidej vlastnictví typu **„Domain"** (`strnadelmotorsport.cz`).
+2. Google vygeneruje **TXT záznam** — vlož ho do DNS u WEDOSu (typ `TXT`, název `@`,
+   hodnota přesně podle Google). Tahle metoda ověří celou doménu (http/https/www)
+   najednou a nevyžaduje žádnou úpravu kódu.
+3. Po ověření v Search Console přidej **Sitemap**: `https://strnadelmotorsport.cz/sitemap.xml`
+   (soubor je součástí webu, viz `public/sitemap.xml`).
+4. Alternativa bez DNS: vlastnictví typu „URL prefix" + metoda „HTML tag" — Google
+   ti dá řádek `<meta name="google-site-verification" content="...">`, který vložíš
+   do `index.html` (místo je tam připravené a označené komentářem).
+
 ## Spuštění lokálně
 ```bash
 npm install
@@ -24,7 +60,7 @@ npm run preview
 ## Nasazení na GitHub Pages
 
 Repo: `https://github.com/lukasobrucnik/strnadelweb.git` — `base` ve `vite.config.js`
-je už nastaven na `/strnadelweb/`.
+je nastaven na `/` (kvůli vlastní doméně, viz sekce výše).
 
 ```bash
 npm install
@@ -46,10 +82,11 @@ Deploy from a branch → Branch: `gh-pages` / `(root)`** → Save.
 *nezkompilované zdrojové soubory* (React/JSX), prohlížeč je neumí spustit
 a uvidíš bílou stránku — zdroj musí být vždy `gh-pages`, ne `main`.
 
-Web pak poběží na:
+Web pak poběží na (po nastavení DNS, viz sekce „Vlastní doména" výše):
 ```
-https://lukasobrucnik.github.io/strnadelweb/
+https://strnadelmotorsport.cz/
 ```
+(Než se DNS propíše, bude funkční i adresa `https://lukasobrucnik.github.io/strnadelweb/`.)
 
 ## Struktura
 ```

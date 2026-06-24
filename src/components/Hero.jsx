@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <header ref={ref} className="relative h-screen w-full flex items-center overflow-hidden">
       <motion.div style={{ y: bgY }} className="absolute inset-0 z-0 scale-110">
-        <Foto slozka="hero" alt="Strnadel Motorsport — karting v akci" className="w-full h-full opacity-40" />
+        <Foto slozka="hero" alt="Strnadel Motorsport — kartingový tým, motokáry Rotax v akci" className="w-full h-full opacity-40" />
         <motion.div style={{ opacity: overlayOpacity }} className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/70" />
         <div className="absolute inset-0 livery-overlay pointer-events-none opacity-30" />
       </motion.div>

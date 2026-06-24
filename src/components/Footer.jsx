@@ -81,8 +81,11 @@ export default function Footer() {
               <span className="block text-[10px] font-label-sm text-on-surface-variant mb-3 uppercase tracking-widest font-black">
                 KONTAKT
               </span>
-              <a href="mailto:info@strnadelmotorsport.cz" className="text-white font-label-sm font-black text-sm block hover:text-phosphor-yellow transition-colors">
-                info@strnadelmotorsport.cz
+              <a href="mailto:Motorsport.strnadel@gmail.com" className="text-white font-label-sm font-black text-sm block hover:text-phosphor-yellow transition-colors">
+                Motorsport.strnadel@gmail.com
+              </a>
+              <a href="tel:+420775177772" className="text-white font-label-sm font-black text-sm block mt-2 hover:text-phosphor-yellow transition-colors">
+                +420 775 177 772
               </a>
             </div>
           </RevealOnScroll>

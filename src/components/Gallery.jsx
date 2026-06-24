@@ -4,14 +4,14 @@ import RevSegments from './RevSegments';
 import Foto from './Foto';
 
 const DLAZDICE = [
-  'galerie-1',
-  'galerie-2',
-  'galerie-3',
-  'galerie-4',
-  'galerie-5',
-  'galerie-6',
-  'galerie-7',
-  'galerie-8',
+  { slozka: 'galerie-1', alt: 'Strnadel Motorsport — kart na startu, kartingový závod' },
+  { slozka: 'galerie-2', alt: 'Strnadel Motorsport — servis motokáry v boxech' },
+  { slozka: 'galerie-3', alt: 'Strnadel Motorsport — jezdec týmu na trati' },
+  { slozka: 'galerie-4', alt: 'Strnadel Motorsport — atmosféra závodního víkendu' },
+  { slozka: 'galerie-5', alt: 'Strnadel Motorsport — týmová fotka, kartingový tým' },
+  { slozka: 'galerie-6', alt: 'Strnadel Motorsport — příprava motokáry před závodem' },
+  { slozka: 'galerie-7', alt: 'Strnadel Motorsport — paddock, zázemí týmu' },
+  { slozka: 'galerie-8', alt: 'Strnadel Motorsport — moment ze závodů Rotax' },
 ];
 
 export default function Gallery() {
@@ -34,16 +34,16 @@ export default function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {DLAZDICE.map((slozka, i) => (
-            <RevealOnScroll key={slozka} delay={i * 0.06} y={20}>
+          {DLAZDICE.map((d, i) => (
+            <RevealOnScroll key={d.slozka} delay={i * 0.06} y={20}>
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
                 className="relative group overflow-hidden card-shear border border-white/10 h-48 md:h-64"
               >
                 <Foto
-                  slozka={slozka}
-                  alt={`Strnadel Motorsport — fotografie z paddocku`}
+                  slozka={d.slozka}
+                  alt={d.alt}
                   className="opacity-90"
                   imgClassName="group-hover:scale-110 transition-transform duration-700"
                 />
