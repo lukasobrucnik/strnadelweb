@@ -100,3 +100,79 @@ button:focus-visible {
   outline: 2px solid #d2f000;
   outline-offset: 3px;
 }
+
+/* ============================================================
+   FOTO — komponenta pro nahrané fotky + placeholder
+   ============================================================ */
+.foto {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.foto__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.foto--placeholder {
+  background-color: #15171c;
+  background-image: repeating-linear-gradient(
+    135deg,
+    #15171c 0 14px,
+    #191c22 14px 28px
+  );
+}
+.foto--placeholder::after {
+  content: attr(data-nazev);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #5a5f69;
+}
+
+/* ---- Komponenta Foto (fotky/<slozka>/) ---- */
+.foto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.foto__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.foto--placeholder {
+  background-color: #15171c;
+  background-image: repeating-linear-gradient(135deg, #15171c 0 14px, #1c1f25 14px 28px);
+}
+.foto--placeholder::after {
+  content: attr(data-nazev);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5a5f69;
+}
+

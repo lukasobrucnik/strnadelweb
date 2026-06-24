@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Ticker from './components/Ticker';
+import Stats from './components/Stats';
 import TeamProfile from './components/TeamProfile';
 import RacingProgram from './components/RacingProgram';
 import Gallery from './components/Gallery';
@@ -41,6 +42,7 @@ export default function App() {
         <Navbar />
         <Hero />
         <Ticker />
+        <Stats />
         <TeamProfile />
         <RacingProgram />
         <Gallery />

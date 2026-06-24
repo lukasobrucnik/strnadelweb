@@ -1,21 +1,21 @@
 import { motion } from 'framer-motion';
 import RevealOnScroll from './RevealOnScroll';
 
-const KATEGORIE_A = ['Mini 60', 'OKJ', 'OK', 'KZ2'];
-const KATEGORIE_B = ['Rotax Micromax', 'Rotax Minimax', 'Rotax Junior', 'Rotax Senior'];
+const KATEGORIE_A = ['Mini 60', 'OK Junior', 'OK', 'KZ2'];
+const KATEGORIE_B = ['Rotax Micro Max', 'Rotax Mini Max', 'Rotax Junior', 'Rotax Senior'];
 
 const SAMPIONATY = [
-  { label: 'MISTROVSTVÍ ČR', zkr: 'MČR' },
-  { label: 'MAJSTROVSTVÁ SR', zkr: 'MSR' },
+  { label: 'MISTROVSTVÍ ČESKÉ REPUBLIKY', zkr: 'MČR' },
+  { label: 'MISTROVSTVÍ SLOVENSKÉ REPUBLIKY', zkr: 'MSR' },
   { label: 'MORAVSKÝ POHÁR', zkr: 'MP' },
-  { label: 'SLOVENSKÝ K. POHÁR', zkr: 'SKP' },
-  { label: 'CENTRAL EUROPE', zkr: 'RMC-CE' },
-  { label: 'EURO CHALLENGE', zkr: 'RMC-Eurotrophy' },
+  { label: 'SLOVENSKÝ KARTINGOVÝ POHÁR', zkr: 'SKP' },
+  { label: 'ROTAX MAX CHALLENGE CENTRAL EUROPE', zkr: 'RMC-CE' },
+  { label: 'ROTAX MAX EURO TROPHY', zkr: 'MISTROVSTVÍ EVROPY' },
 ];
 
 export default function RacingProgram() {
   return (
-    <section id="racing-program" className="py-24 md:py-32 bg-background relative overflow-hidden">
+    <section id="zavodni-program" className="py-24 md:py-32 bg-background relative overflow-hidden">
       <div className="px-margin-mobile md:px-margin-desktop relative z-10">
         <RevealOnScroll className="mb-16 md:mb-20">
           <h2 className="font-headline-lg text-4xl md:text-6xl text-white italic uppercase tracking-tighter mb-4">
@@ -35,7 +35,6 @@ export default function RacingProgram() {
               whileHover={{ borderColor: 'rgba(0,71,171,0.5)' }}
               className="bg-surface-container-low border border-white/5 card-shear p-8 md:p-12 relative overflow-hidden h-full"
             >
-              <div className="absolute top-8 right-8 opacity-10 font-headline-lg text-4xl italic">⚙</div>
               <h3 className="font-headline-lg text-2xl md:text-3xl text-white uppercase italic mb-8 pb-4 border-b border-racing-blue/30 inline-block pr-12">
                 KATEGORIE
               </h3>
@@ -58,35 +57,31 @@ export default function RacingProgram() {
             </motion.div>
           </RevealOnScroll>
 
-          {/* ŠAMPIONÁTY */}
+          {/* SERIÁLY A ŠAMPIONÁTY */}
           <RevealOnScroll delay={0.15}>
             <motion.div
               whileHover={{ borderColor: 'rgba(210,240,0,0.5)' }}
               className="bg-surface-container-low border border-white/5 card-shear p-8 md:p-12 relative overflow-hidden h-full"
             >
-              <div className="absolute top-8 right-8 opacity-10 font-headline-lg text-4xl italic">🏆</div>
               <h3 className="font-headline-lg text-2xl md:text-3xl text-white uppercase italic mb-8 pb-4 border-b border-phosphor-yellow/30 inline-block pr-12">
-                ŠAMPIONÁTY
+                SERIÁLY A ŠAMPIONÁTY
               </h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-8">
+              <div className="flex flex-col gap-6">
                 {SAMPIONATY.map((s, i) => (
                   <div
                     key={s.zkr}
-                    className={`flex justify-between items-baseline ${
-                      i < SAMPIONATY.length - 2 ? 'border-b border-white/5 pb-6' : ''
+                    className={`flex justify-between items-baseline gap-4 ${
+                      i < SAMPIONATY.length - 1 ? 'border-b border-white/5 pb-5' : ''
                     }`}
                   >
-                    <span className="font-label-sm text-[9px] md:text-[10px] text-on-surface-variant uppercase tracking-widest pr-3">
+                    <span className="font-label-sm text-[10px] md:text-[11px] text-on-surface-variant uppercase tracking-widest">
                       {s.label}
                     </span>
-                    <span className="font-headline-lg text-lg md:text-xl text-white italic shrink-0">{s.zkr}</span>
+                    <span className="font-headline-lg text-base md:text-lg text-white italic shrink-0 text-right">
+                      {s.zkr}
+                    </span>
                   </div>
                 ))}
-              </div>
-              <div className="flex gap-1 absolute bottom-8 right-8">
-                <div className="w-3 h-1.5 bg-racing-blue" />
-                <div className="w-3 h-1.5 bg-phosphor-yellow" />
-                <div className="w-3 h-1.5 bg-tertiary" />
               </div>
             </motion.div>
           </RevealOnScroll>

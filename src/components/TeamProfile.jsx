@@ -1,24 +1,26 @@
 import { motion } from 'framer-motion';
 import RevealOnScroll from './RevealOnScroll';
-import AnimatedCounter from './AnimatedCounter';
+import Foto from './Foto';
 
 const KARTY = [
   {
-    title: 'Technické Zázemí',
-    text: 'Vlastní motorárna a mobilní servisní jednotka pro kompletní support na trati.',
+    title: 'Technické zázemí',
+    text: 'Kompletní servis závodní techniky a profesionální podpora během závodních víkendů.',
     border: 'border-phosphor-yellow',
+    slozka: 'technicke-zazemi',
   },
   {
-    title: 'Data & Koučink',
-    text: 'Pokročilá analýza telemetrie MyChron/Unipro pro optimalizaci výkonu jezdce.',
+    title: 'Data a analýza',
+    text: 'Práce s telemetrií a detailní rozbory jízd pomáhají jezdcům zrychlovat a posouvat své limity.',
     border: 'border-racing-blue',
+    slozka: 'data-analyza',
   },
 ];
 
 export default function TeamProfile() {
   return (
     <section
-      id="team-profile"
+      id="tym"
       className="relative bg-surface py-28 md:py-40 diagonal-shear carbon-texture overflow-hidden"
     >
       <div className="px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 md:gap-24 items-center relative z-10">
@@ -33,19 +35,22 @@ export default function TeamProfile() {
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.1}>
-            <h2 className="font-headline-lg text-4xl md:text-6xl text-white italic uppercase">
-              TRADICE.
+            <h2 className="font-headline-lg text-3xl md:text-5xl text-white italic uppercase leading-tight">
+              ZKUŠENOSTI, KTERÉ
               <br />
-              VÝKON. <span className="text-racing-blue">VIZE.</span>
+              POSOUVAJÍ <span className="text-racing-blue">JEZDCE VPŘED</span>
             </h2>
           </RevealOnScroll>
 
-          <RevealOnScroll delay={0.2}>
+          <RevealOnScroll delay={0.2} className="space-y-5">
             <p className="font-body-md text-on-surface-variant leading-relaxed text-base md:text-lg">
-              Strnadel Motorsport je zavedené jméno v českém a středoevropském kartingu. Naším posláním je
-              poskytovat jezdcům špičkové technické zázemí založené na telemetrii a datech, které je nezbytné
-              pro úspěch v moderním motorsportu. Specializujeme se na kategorie Rotax a mezinárodní třídy
-              OK/KZ.
+              Strnadel Motorsport je závodní tým zaměřený na výchovu talentovaných jezdců a profesionální
+              podporu během celé sezóny.
+            </p>
+            <p className="font-body-md text-on-surface-variant leading-relaxed text-base md:text-lg">
+              Spojujeme dlouholeté zkušenosti, moderní techniku a individuální přístup ke každému
+              závodníkovi. Naším cílem není pouze účast na závodech, ale dlouhodobý sportovní růst a
+              dosahování špičkových výsledků.
             </p>
           </RevealOnScroll>
 
@@ -55,10 +60,16 @@ export default function TeamProfile() {
                 <motion.div
                   whileHover={{ y: -6 }}
                   transition={{ duration: 0.25 }}
-                  className={`p-6 bg-surface-container-low border-l-4 ${karta.border} card-shear h-full`}
+                  className={`relative overflow-hidden bg-surface-container-low border-l-4 ${karta.border} card-shear h-full`}
                 >
-                  <h4 className="font-headline-lg text-xl text-white uppercase italic mb-2">{karta.title}</h4>
-                  <p className="font-body-md text-on-surface-variant text-sm">{karta.text}</p>
+                  <div className="h-28 relative">
+                    <Foto slozka={karta.slozka} alt={karta.title} className="opacity-50" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent" />
+                  </div>
+                  <div className="p-6 pt-2">
+                    <h4 className="font-headline-lg text-xl text-white uppercase italic mb-2">{karta.title}</h4>
+                    <p className="font-body-md text-on-surface-variant text-sm">{karta.text}</p>
+                  </div>
                 </motion.div>
               </RevealOnScroll>
             ))}
@@ -67,20 +78,16 @@ export default function TeamProfile() {
 
         <RevealOnScroll delay={0.15} className="relative">
           <div className="absolute -top-10 -left-10 w-32 md:w-40 h-32 md:h-40 border-t-4 border-l-4 border-racing-blue opacity-50" />
-          <div className="card-shear overflow-hidden border-2 border-white/5 bg-background shadow-2xl">
-            <img
-              alt="Strnadel Motorsport — týmové operace"
-              className="w-full h-[360px] md:h-[500px] object-cover opacity-90"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWnAIPLoQoM9yZcV-qzJ-zyge6AMsDSfELOsk00ILbir8nuV3GdIHAdWf4EvJ8kKz4SKgBi8H3UI_6STTCUevQmIRRq6QISk2a99F7bcyjFUf6C7XfBs1slG6wFS7TY_fht01ulFv_76S-mg-CLCVdF_AozPuzp4uW0ckzu76Ouaulz7Gc1H9hGoX9tYNVD4TIuGGxsRjQ3QwMYNkLneMX16uHNp66_693FIHtHdVqP6UCXmf7pSwLAFKyyPjJZQaqGbYIXACnxJw"
-            />
+          <div className="card-shear overflow-hidden border-2 border-white/5 bg-background shadow-2xl h-[360px] md:h-[500px]">
+            <Foto slozka="kdo-jsme" alt="Strnadel Motorsport — týmové operace" className="opacity-90" />
           </div>
-          <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 bg-racing-blue text-white px-7 md:px-10 py-6 md:py-8 btn-clip flex flex-col items-center justify-center shadow-2xl">
-            <span className="font-label-sm text-2xl md:text-4xl font-black text-phosphor-yellow italic">
-              <AnimatedCounter value={2012} prefix="EST. " />
+          <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 bg-racing-blue text-white px-7 md:px-10 py-6 md:py-8 btn-clip flex flex-col items-center justify-center shadow-2xl text-center">
+            <span className="font-label-sm text-lg md:text-2xl font-black text-phosphor-yellow italic leading-tight">
+              KAŽDOROČNĚ
+              <br />
+              NA TRATI
             </span>
-            <span className="font-label-sm text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-1">
-              SOUČÁST ELITY
-            </span>
+            <span className="font-label-sm text-2xl md:text-3xl font-black text-white italic mt-1">20+ LET</span>
           </div>
         </RevealOnScroll>
       </div>

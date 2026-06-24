@@ -3,10 +3,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 import logoWhite from '../assets/logo-white.png';
 
 const LINKY = [
-  { href: '#team-profile', label: 'PROFIL TÝMU' },
-  { href: '#racing-program', label: 'ZÁVODNÍ PROGRAM' },
-  { href: '#gallery', label: 'GALERIE' },
-  { href: '#kontakt', label: 'PARTNEŘI' },
+  { href: '#tym', label: 'O TÝMU' },
+  { href: '#zavodni-program', label: 'ZÁVODNÍ PROGRAM' },
+  { href: '#galerie', label: 'GALERIE' },
+  { href: '#kontakt', label: 'KONTAKT' },
 ];
 
 export default function Navbar() {
@@ -45,13 +45,6 @@ export default function Navbar() {
           </a>
         ))}
       </div>
-
-      <a
-        href="#kontakt"
-        className="hidden md:inline-block bg-racing-blue text-white px-8 py-2 font-label-sm text-xs font-bold btn-clip hover:bg-phosphor-yellow hover:text-background transition-all duration-300 transform hover:scale-105"
-      >
-        KONTAKT
-      </a>
 
       {/* Hamburger mobil */}
       <button
@@ -97,16 +90,6 @@ export default function Navbar() {
                 {link.label}
               </motion.a>
             ))}
-            <motion.a
-              href="#kontakt"
-              onClick={() => setMenuOpen(false)}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: LINKY.length * 0.07 }}
-              className="mt-4 bg-racing-blue text-white px-8 py-3 font-label-sm font-bold btn-clip"
-            >
-              KONTAKT
-            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>
