@@ -1,5 +1,5 @@
 const ITEMS = [
-  { dot: 'bg-racing-blue', text: '10+ LET ZKUŠENOSTÍ' },
+  { dot: 'bg-racing-blue', text: '25+ LET ZKUŠENOSTÍ' },
   { dot: 'bg-phosphor-yellow', text: 'ČESKO I ZAHRANIČÍ' },
   { dot: 'bg-tertiary', text: 'PROFESIONÁLNÍ TECHNICKÉ ZÁZEMÍ' },
   { dot: 'bg-racing-blue', text: 'DATA A ANALÝZA' },

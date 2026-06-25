@@ -6,7 +6,7 @@ import Foto from './Foto';
 const DLAZDICE = [
   { slozka: 'galerie-1', alt: 'Strnadel Motorsport — kart na startu, kartingový závod' },
   { slozka: 'galerie-2', alt: 'Strnadel Motorsport — servis motokáry v boxech' },
-  { slozka: 'galerie-3', alt: 'Strnadel Motorsport — jezdec týmu na trati' },
+  { slozka: 'galerie-3', alt: 'Strnadel Motorsport — jezdec týmu na trati', pozice: 'center 22%' },
   { slozka: 'galerie-4', alt: 'Strnadel Motorsport — atmosféra závodního víkendu' },
   { slozka: 'galerie-5', alt: 'Strnadel Motorsport — týmová fotka, kartingový tým' },
   { slozka: 'galerie-6', alt: 'Strnadel Motorsport — příprava motokáry před závodem' },
@@ -46,6 +46,7 @@ export default function Gallery() {
                   alt={d.alt}
                   className="opacity-90"
                   imgClassName="group-hover:scale-110 transition-transform duration-700"
+                  imgStyle={d.pozice ? { objectPosition: d.pozice } : undefined}
                 />
               </motion.div>
             </RevealOnScroll>

@@ -2,8 +2,8 @@ import RevealOnScroll from './RevealOnScroll';
 import AnimatedCounter from './AnimatedCounter';
 
 const STATY = [
-  { typ: 'counter', value: 10, suffix: '+', label: 'LET ZKUŠENOSTÍ' },
-  { typ: 'text', value: 'DESÍTKY', label: 'ODJETÝCH ZÁVODŮ' },
+  { typ: 'counter', value: 25, suffix: '+', label: 'LET ZKUŠENOSTÍ' },
+  { typ: 'counter', value: 250, suffix: '+', label: 'ODJETÝCH ZÁVODŮ' },
   { typ: 'text', value: 'ČESKO', label: 'I ZAHRANIČÍ' },
   { typ: 'text', value: 'PROFI', label: 'TECHNICKÉ ZÁZEMÍ' },
 ];

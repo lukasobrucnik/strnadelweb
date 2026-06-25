@@ -5,13 +5,13 @@ import { getFotka } from '../utils/fotky';
  * Pokud složka neobsahuje žádný obrázek, zobrazí se stylový placeholder s názvem složky,
  * takže webu nic nespadne a hned je vidět, kam fotka patří.
  */
-export default function Foto({ slozka, alt = '', className = '', imgClassName = '' }) {
+export default function Foto({ slozka, alt = '', className = '', imgClassName = '', imgStyle }) {
   const src = getFotka(slozka);
 
   if (src) {
     return (
       <div className={`foto ${className}`}>
-        <img src={src} alt={alt} className={`foto__img ${imgClassName}`} />
+        <img src={src} alt={alt} className={`foto__img ${imgClassName}`} style={imgStyle} />
       </div>
     );
   }

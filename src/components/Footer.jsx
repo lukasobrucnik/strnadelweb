@@ -53,10 +53,15 @@ export default function Footer() {
               DOKUMENTY
             </h4>
             <div className="flex flex-col gap-4">
-              {['OCHRANA OSOBNÍCH ÚDAJŮ', 'MEDIÁLNÍ MATERIÁLY', 'INFORMACE PRO PARTNERY'].map((label) => (
+              {[
+                ['OCHRANA OSOBNÍCH ÚDAJŮ', '/ochrana-osobnich-udaju.html', false],
+                ['MEDIÁLNÍ MATERIÁLY', '#', false],
+                ['INFORMACE PRO PARTNERY', '/strnadel-motorsport-partneri.pdf', true],
+              ].map(([label, href, download]) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
+                  {...(download ? { download: true } : {})}
                   className="text-white hover:text-phosphor-yellow transition-colors font-label-sm uppercase tracking-widest text-xs"
                 >
                   {label}
@@ -70,10 +75,20 @@ export default function Footer() {
               SOCIÁLNÍ SÍTĚ
             </h4>
             <div className="flex gap-10">
-              <a href="#" className="text-white hover:text-racing-blue transition-colors font-label-sm uppercase tracking-widest text-xs">
+              <a
+                href="https://www.instagram.com/strnadelmotorsport/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-racing-blue transition-colors font-label-sm uppercase tracking-widest text-xs"
+              >
                 INSTAGRAM
               </a>
-              <a href="#" className="text-white hover:text-racing-blue transition-colors font-label-sm uppercase tracking-widest text-xs">
+              <a
+                href="https://www.facebook.com/p/Motorsport-Strnadel-100067773919892/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-racing-blue transition-colors font-label-sm uppercase tracking-widest text-xs"
+              >
                 FACEBOOK
               </a>
             </div>

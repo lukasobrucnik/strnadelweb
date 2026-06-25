@@ -90,6 +90,13 @@ https://strnadelmotorsport.cz/
 
 ## Struktura
 ```
+public/
+├─ favicon.png, icon-192.png, icon-512.png, apple-touch-icon.png
+│  ← ikony webu (modré pozadí + bílé logo, viditelné i v Google výsledcích)
+├─ ochrana-osobnich-udaju.html  ← samostatná stránka GDPR (link v patičce)
+├─ strnadel-motorsport-partneri.pdf  ← ke stažení z patičky („Informace pro partnery")
+├─ CNAME, robots.txt, sitemap.xml
+
 src/
 ├─ assets/
 │  ├─ logo-white.png   ← logo Strnadel (bílá verze pro temný motiv, navbar + footer)
