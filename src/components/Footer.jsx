@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="px-margin-mobile md:px-margin-desktop relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           <RevealOnScroll className="flex flex-col gap-8">
-            <img src={logoWhite} alt="Strnadel Motorsport" className="h-11 w-auto object-contain self-start" />
+            <img src={logoWhite} alt="Strnadel Motorsport" width="791" height="223" className="h-11 w-auto object-contain self-start" />
             <p className="font-body-md text-on-surface-variant text-sm leading-relaxed max-w-xs">
               Profesionální motokárový tým působící v České republice i zahraničí a výhradní zastoupení
               motokár SODI pro ČR. Pomáháme jezdcům růst, zrychlovat a dosahovat jejich sportovních cílů.
@@ -27,9 +27,9 @@ export default function Footer() {
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.08} className="flex flex-col gap-8">
-            <h4 className="font-label-sm text-racing-blue tracking-[0.4em] font-black uppercase text-xs">
+            <p className="font-label-sm text-racing-blue tracking-[0.4em] font-black uppercase text-xs">
               NAVIGACE
-            </h4>
+            </p>
             <div className="flex flex-col gap-4">
               {[
                 ['#tym', 'O TÝMU'],
@@ -50,9 +50,9 @@ export default function Footer() {
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.16} className="flex flex-col gap-8">
-            <h4 className="font-label-sm text-phosphor-yellow tracking-[0.4em] font-black uppercase text-xs">
+            <p className="font-label-sm text-phosphor-yellow tracking-[0.4em] font-black uppercase text-xs">
               DOKUMENTY
-            </h4>
+            </p>
             <div className="flex flex-col gap-4">
               {[
                 ['OCHRANA OSOBNÍCH ÚDAJŮ', '/ochrana-osobnich-udaju.html', false],
@@ -72,9 +72,9 @@ export default function Footer() {
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.24} className="flex flex-col gap-8">
-            <h4 className="font-label-sm text-white tracking-[0.4em] font-black uppercase text-xs">
+            <p className="font-label-sm text-white tracking-[0.4em] font-black uppercase text-xs">
               SOCIÁLNÍ SÍTĚ
-            </h4>
+            </p>
             <div className="flex gap-10">
               <a
                 href="https://www.instagram.com/strnadelmotorsport/"

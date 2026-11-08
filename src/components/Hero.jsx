@@ -53,7 +53,7 @@ export default function Hero() {
         </motion.div>
 
         <h1 className="font-headline-lg text-[44px] md:text-[100px] leading-tight italic font-black uppercase tracking-tighter text-white drop-shadow-2xl">
-          <AnimatedWord text="STRNADEL" />
+          <AnimatedWord text="STRNADEL" />{' '}
           <br />
           <AnimatedWord text="MOTORSPORT" className="text-phosphor-yellow" />
         </h1>

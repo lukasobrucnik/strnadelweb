@@ -30,7 +30,7 @@ export default function Navbar() {
       }`}
     >
       <a href="#" className="flex items-center gap-6" aria-label="Strnadel Motorsport — domů">
-        <img src={logoWhite} alt="Strnadel Motorsport" className="h-9 md:h-10 w-auto object-contain" />
+        <img src={logoWhite} alt="Strnadel Motorsport" width="791" height="223" className="h-9 md:h-10 w-auto object-contain" />
       </a>
 
       {/* Desktop navigace */}

@@ -33,7 +33,7 @@ export default function SodiZastoupeni() {
 
           <RevealOnScroll delay={0.08}>
             <h2 className="font-headline-lg text-3xl md:text-5xl text-white italic uppercase leading-tight tracking-tighter">
-              Výhradní zastoupení <span className="text-phosphor-yellow">SODI</span>
+              Výhradní zastoupení <span className="text-phosphor-yellow">SODI</span>{' '}
               <br />
               pro Českou republiku
             </h2>

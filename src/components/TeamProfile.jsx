@@ -36,7 +36,7 @@ export default function TeamProfile() {
 
           <RevealOnScroll delay={0.1}>
             <h2 className="font-headline-lg text-3xl md:text-5xl text-white italic uppercase leading-tight">
-              ZKUŠENOSTI, KTERÉ
+              ZKUŠENOSTI, KTERÉ{' '}
               <br />
               POSOUVAJÍ <span className="text-racing-blue">JEZDCE VPŘED</span>
             </h2>
@@ -68,7 +68,7 @@ export default function TeamProfile() {
                     <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent" />
                   </div>
                   <div className="p-6 pt-2">
-                    <h4 className="font-headline-lg text-xl text-white uppercase italic mb-2">{karta.title}</h4>
+                    <h3 className="font-headline-lg text-xl text-white uppercase italic mb-2">{karta.title}</h3>
                     <p className="font-body-md text-on-surface-variant text-sm">{karta.text}</p>
                   </div>
                 </motion.div>
@@ -84,7 +84,7 @@ export default function TeamProfile() {
           </div>
           <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 bg-racing-blue text-white px-7 md:px-10 py-6 md:py-8 btn-clip flex flex-col items-center justify-center shadow-2xl text-center">
             <span className="font-label-sm text-lg md:text-2xl font-black text-phosphor-yellow italic leading-tight">
-              KAŽDOROČNĚ
+              KAŽDOROČNĚ{" "}
               <br />
               NA TRATI
             </span>
