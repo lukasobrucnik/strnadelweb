@@ -6,10 +6,4 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://strnadelmotorsport.cz/ochrana-osobnich-udaju.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
 </urlset>

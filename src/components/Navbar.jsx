@@ -29,7 +29,7 @@ export default function Navbar() {
         scrolled ? 'bg-background/90 backdrop-blur-md border-b border-white/10' : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <a href="#" className="flex items-center gap-6" aria-label="Strnadel Motorsport — domů">
+      <a href="/" className="flex items-center gap-6" aria-label="Strnadel Motorsport — domů">
         <img src={logoWhite} alt="Strnadel Motorsport" width="791" height="223" className="h-9 md:h-10 w-auto object-contain" />
       </a>
 

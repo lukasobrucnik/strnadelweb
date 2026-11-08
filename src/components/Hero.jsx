@@ -38,24 +38,25 @@ export default function Hero() {
       </motion.div>
 
       <div className="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-6xl">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-3 bg-racing-blue text-white font-label-sm text-xs px-4 py-1 mb-8 italic btn-clip"
-        >
+        <h1>
           <motion.span
-            animate={{ opacity: [1, 0.3, 1] }}
-            transition={{ duration: 1.6, repeat: Infinity }}
-            className="w-2 h-2 rounded-full bg-phosphor-yellow"
-          />
-          Motokárový tým · Karting Team
-        </motion.div>
-
-        <h1 className="font-headline-lg text-[44px] md:text-[100px] leading-tight italic font-black uppercase tracking-tighter text-white drop-shadow-2xl">
-          <AnimatedWord text="STRNADEL" />{' '}
-          <br />
-          <AnimatedWord text="MOTORSPORT" className="text-phosphor-yellow" />
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-3 bg-racing-blue text-white font-label-sm text-xs px-4 py-1 mb-8 italic btn-clip"
+          >
+            <motion.span
+              animate={{ opacity: [1, 0.3, 1] }}
+              transition={{ duration: 1.6, repeat: Infinity }}
+              className="w-2 h-2 rounded-full bg-phosphor-yellow"
+            />
+            Motokárový tým · Karting Team
+          </motion.span>{' '}
+          <span className="block font-headline-lg text-[44px] md:text-[100px] leading-tight italic font-black uppercase tracking-tighter text-white drop-shadow-2xl">
+            <AnimatedWord text="STRNADEL" />{' '}
+            <br />
+            <AnimatedWord text="MOTORSPORT" className="text-phosphor-yellow" />
+          </span>
         </h1>
 
         <motion.p

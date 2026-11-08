@@ -63,6 +63,14 @@
       rel="stylesheet"
     />
 
+    <!-- Bez JavaScriptu: skrýt úvodní clonu a ukázat obsah, který jinak odkrývají animace -->
+    <noscript>
+      <style>
+        .z-\[100\] { display: none !important; }
+        #root [style*='opacity:0'] { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
+
     <!-- Strukturovaná data pro Google: web, tým a zastoupení SODI -->
     <script type="application/ld+json">
       {
