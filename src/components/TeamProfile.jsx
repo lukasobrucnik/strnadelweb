@@ -88,7 +88,7 @@ export default function TeamProfile() {
               <br />
               NA TRATI
             </span>
-            <span className="font-label-sm text-2xl md:text-3xl font-black text-white italic mt-1">20+ LET</span>
+            <span className="font-label-sm text-2xl md:text-3xl font-black text-white italic mt-1">25+ LET</span>
           </div>
         </RevealOnScroll>
       </div>
