@@ -2,27 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://strnadelmotorsport.cz/</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://strnadelmotorsport.cz/#tym</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://strnadelmotorsport.cz/#zavodni-program</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://strnadelmotorsport.cz/#galerie</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://strnadelmotorsport.cz/#kontakt</loc>
+    <loc>https://strnadelmotorsport.cz/ochrana-osobnich-udaju.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.2</priority>
   </url>
 </urlset>
