@@ -4,6 +4,7 @@ import logoWhite from '../assets/logo-white.png';
 
 const LINKY = [
   { href: '#tym', label: 'O TÝMU' },
+  { href: '#sodi', label: 'SODI' },
   { href: '#zavodni-program', label: 'ZÁVODNÍ PROGRAM' },
   { href: '#galerie', label: 'GALERIE' },
   { href: '#kontakt', label: 'KONTAKT' },

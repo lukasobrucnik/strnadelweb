@@ -44,8 +44,9 @@ export default function TeamProfile() {
 
           <RevealOnScroll delay={0.2} className="space-y-5">
             <p className="font-body-md text-on-surface-variant leading-relaxed text-base md:text-lg">
-              Strnadel Motorsport je závodní tým zaměřený na výchovu talentovaných jezdců a profesionální
-              podporu během celé sezóny.
+              Strnadel Motorsport je český motokárový (kartingový) tým zaměřený na výchovu talentovaných jezdců
+              a profesionální podporu během celé sezóny — od Mistrovství ČR a Moravského poháru až po Rotax Max
+              Challenge.
             </p>
             <p className="font-body-md text-on-surface-variant leading-relaxed text-base md:text-lg">
               Spojujeme dlouholeté zkušenosti, moderní techniku a individuální přístup ke každému
@@ -79,7 +80,7 @@ export default function TeamProfile() {
         <RevealOnScroll delay={0.15} className="relative">
           <div className="absolute -top-10 -left-10 w-32 md:w-40 h-32 md:h-40 border-t-4 border-l-4 border-racing-blue opacity-50" />
           <div className="card-shear overflow-hidden border-2 border-white/5 bg-background shadow-2xl h-[360px] md:h-[500px]">
-            <Foto slozka="kdo-jsme" alt="Strnadel Motorsport — týmové operace" className="opacity-90" />
+            <Foto slozka="kdo-jsme" alt="Zázemí motokárového týmu Strnadel Motorsport na závodech" className="opacity-90" />
           </div>
           <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 bg-racing-blue text-white px-7 md:px-10 py-6 md:py-8 btn-clip flex flex-col items-center justify-center shadow-2xl text-center">
             <span className="font-label-sm text-lg md:text-2xl font-black text-phosphor-yellow italic leading-tight">

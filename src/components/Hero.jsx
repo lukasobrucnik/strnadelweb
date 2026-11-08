@@ -30,9 +30,9 @@ export default function Hero() {
   const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.4, 0.85]);
 
   return (
-    <header ref={ref} className="relative h-screen w-full flex items-center overflow-hidden">
+    <header ref={ref} className="relative min-h-screen w-full flex items-center overflow-hidden pt-28 pb-24 md:pt-32">
       <motion.div style={{ y: bgY }} className="absolute inset-0 z-0 scale-110">
-        <Foto slozka="hero" alt="Strnadel Motorsport — kartingový tým, motokáry Rotax v akci" className="w-full h-full opacity-40" />
+        <Foto slozka="hero" alt="Motokárový tým Strnadel Motorsport v akci na trati" className="w-full h-full opacity-40" priorita />
         <motion.div style={{ opacity: overlayOpacity }} className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/70" />
         <div className="absolute inset-0 livery-overlay pointer-events-none opacity-30" />
       </motion.div>
@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ duration: 1.6, repeat: Infinity }}
             className="w-2 h-2 rounded-full bg-phosphor-yellow"
           />
-          Karting Team
+          Motokárový tým · Karting Team
         </motion.div>
 
         <h1 className="font-headline-lg text-[44px] md:text-[100px] leading-tight italic font-black uppercase tracking-tighter text-white drop-shadow-2xl">
@@ -73,8 +73,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 1.0 }}
           className="font-body-md text-on-surface max-w-xl mb-12 border-l-4 border-racing-blue pl-6 text-base md:text-lg"
         >
-          Působíme v českém i mezinárodním kartingu a poskytujeme jezdcům profesionální technické zázemí,
-          individuální přístup a zkušenosti získané během let na závodních tratích.
+          Český motokárový tým působící v tuzemském i mezinárodním kartingu. Jezdcům poskytujeme profesionální
+          technické zázemí, individuální přístup a zkušenosti získané během let na závodních tratích.
         </motion.p>
 
         <motion.div
@@ -100,12 +100,27 @@ export default function Hero() {
             GALERIE
           </motion.a>
         </motion.div>
+
+        <motion.a
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 1.35 }}
+          href="#sodi"
+          className="inline-flex items-center gap-3 mt-10 font-label-sm text-xs md:text-sm uppercase tracking-widest text-white/80 hover:text-phosphor-yellow transition-colors"
+        >
+          <span className="flex h-[3px] w-9" aria-hidden="true">
+            <span className="flex-1 bg-racing-blue" />
+            <span className="flex-1 bg-white" />
+            <span className="flex-1 bg-racing-red" />
+          </span>
+          Výhradní zastoupení SODI pro ČR →
+        </motion.a>
       </div>
 
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-on-surface-variant"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-on-surface-variant"
       >
         <span className="font-label-sm text-[10px] tracking-widest uppercase">SCROLL</span>
         <div className="w-[1px] h-8 bg-gradient-to-b from-racing-blue to-transparent" />

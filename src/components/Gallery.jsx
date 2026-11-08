@@ -4,14 +4,18 @@ import RevSegments from './RevSegments';
 import Foto from './Foto';
 
 const DLAZDICE = [
-  { slozka: 'galerie-1', alt: 'Strnadel Motorsport — kart na startu, kartingový závod' },
-  { slozka: 'galerie-2', alt: 'Strnadel Motorsport — servis motokáry v boxech' },
-  { slozka: 'galerie-3', alt: 'Strnadel Motorsport — jezdec týmu na trati', pozice: 'center 22%' },
-  { slozka: 'galerie-4', alt: 'Strnadel Motorsport — atmosféra závodního víkendu' },
-  { slozka: 'galerie-5', alt: 'Strnadel Motorsport — týmová fotka, kartingový tým' },
-  { slozka: 'galerie-6', alt: 'Strnadel Motorsport — příprava motokáry před závodem' },
-  { slozka: 'galerie-7', alt: 'Strnadel Motorsport — paddock, zázemí týmu' },
-  { slozka: 'galerie-8', alt: 'Strnadel Motorsport — moment ze závodů Rotax' },
+  { slozka: 'galerie-1', alt: 'Motokára SODI týmu Strnadel Motorsport v čele závodního pole' },
+  { slozka: 'galerie-2', alt: 'Jezdec Strnadel Motorsport na motokáře SODI na okruhu Steel Ring' },
+  { slozka: 'galerie-3', alt: 'Souboj dvou motokár SODI, motokárový tým Strnadel Motorsport' },
+  { slozka: 'galerie-4', alt: 'Motokára Strnadel Motorsport vede skupinu v zatáčce' },
+  { slozka: 'galerie-5', alt: 'Jezdec v motokáře SODI Kart Racing před výjezdem z boxů' },
+  { slozka: 'galerie-6', alt: 'Tým Strnadel Motorsport při debatě s jezdcem v depu' },
+  { slozka: 'galerie-7', alt: 'Mechanik Strnadel Motorsport u motokáry na startovním roštu' },
+  { slozka: 'galerie-8', alt: 'Radost z výsledku v týmu Strnadel Motorsport' },
+  { slozka: 'galerie-9', alt: 'Jezdec Strnadel Motorsport si nasazuje přilbu v motokáře SODI', pozice: 'center 35%' },
+  { slozka: 'galerie-10', alt: 'Mechanik Strnadel Motorsport připravuje motor motokáry', pozice: 'center 22%' },
+  { slozka: 'galerie-11', alt: 'Členové kartingového týmu Strnadel Motorsport v depu' },
+  { slozka: 'galerie-12', alt: 'Servis motokáry v zázemí týmu Strnadel Motorsport' },
 ];
 
 export default function Gallery() {
@@ -27,8 +31,8 @@ export default function Gallery() {
           </RevealOnScroll>
           <RevealOnScroll delay={0.15} className="max-w-md border-l-2 border-racing-blue pl-6">
             <p className="font-label-sm text-on-surface-variant text-xs md:text-sm uppercase tracking-wider leading-relaxed">
-              Atmosféra závodních víkendů, napětí na startu, práce mechaniků i radost z výsledků. Nahlédněte
-              do zákulisí Strnadel Motorsport.
+              Atmosféra závodních víkendů, souboje na trati, práce mechaniků i radost z výsledků. Nahlédněte
+              do zákulisí motokárového týmu Strnadel Motorsport.
             </p>
           </RevealOnScroll>
         </div>

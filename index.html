@@ -9,16 +9,16 @@
     <meta name="theme-color" content="#0047ab" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Strnadel Motorsport | Kartingový tým — Rotax, Moravský pohár, ČR i zahraničí</title>
+    <title>Strnadel Motorsport | Motokárový tým a výhradní zastoupení SODI v ČR</title>
     <meta
       name="description"
-      content="Strnadel Motorsport je český kartingový (motokárový) tým působící v kategoriích Rotax a OK/KZ. Závodíme v Moravském poháru, Mistrovství ČR/SR i v Rotax Max Challenge Central Europe (RMC-CE)."
+      content="Strnadel Motorsport – český motokárový (kartingový) tým s 25+ lety zkušeností a výhradní zastoupení závodních motokár SODI pro ČR. Rotax, OK, KZ2, Mistrovství ČR, Moravský pohár, RMC-CE."
     />
     <meta
       name="keywords"
-      content="Strnadel, Strnadel Motorsport, Vojtěch Strnadel, karting, motokáry, motokárový tým, Moravský pohár, Rotax, Rotax CZ, Rotax CE, RMC CE, RMC-CE, karting CZ, kartingový tým, Mistrovství České republiky karting, Mini 60, OK, OKJ, KZ2"
+      content="motokárový tým, kartingový tým, motokárový tým ČR, karting tým Česko, Strnadel Motorsport, Strnadel, SODI, SODI motokáry, SODI ČR, zastoupení SODI, závodní motokáry, karting, motokáry, Rotax, RMC-CE, Moravský pohár, Mistrovství ČR karting, Mini 60, OK, OKJ, KZ2"
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Strnadel Motorsport" />
     <link rel="canonical" href="https://strnadelmotorsport.cz/" />
 
@@ -36,22 +36,25 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="cs_CZ" />
     <meta property="og:site_name" content="Strnadel Motorsport" />
-    <meta property="og:title" content="Strnadel Motorsport | Kartingový tým" />
+    <meta property="og:title" content="Strnadel Motorsport | Motokárový tým a zastoupení SODI v ČR" />
     <meta
       property="og:description"
-      content="Český kartingový tým v kategoriích Rotax a OK/KZ. Moravský pohár, Mistrovství ČR/SR, Rotax Max Challenge Central Europe."
+      content="Český motokárový tým s 25+ lety zkušeností a výhradní zastoupení závodních motokár SODI pro Českou republiku."
     />
     <meta property="og:url" content="https://strnadelmotorsport.cz/" />
-    <meta property="og:image" content="https://strnadelmotorsport.cz/icon-512.png" />
+    <meta property="og:image" content="https://strnadelmotorsport.cz/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Motokárový tým Strnadel Motorsport × SODI" />
 
     <!-- Twitter / X Card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Strnadel Motorsport | Kartingový tým" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Strnadel Motorsport | Motokárový tým a zastoupení SODI v ČR" />
     <meta
       name="twitter:description"
-      content="Český kartingový tým v kategoriích Rotax a OK/KZ. Moravský pohár, Mistrovství ČR/SR, Rotax Max Challenge Central Europe."
+      content="Český motokárový tým s 25+ lety zkušeností a výhradní zastoupení závodních motokár SODI pro Českou republiku."
     />
-    <meta name="twitter:image" content="https://strnadelmotorsport.cz/icon-512.png" />
+    <meta name="twitter:image" content="https://strnadelmotorsport.cz/og-image.jpg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,28 +63,55 @@
       rel="stylesheet"
     />
 
-    <!-- Strukturovaná data pro Google (rozpoznání jako sportovní organizace) -->
+    <!-- Strukturovaná data pro Google: web, tým a zastoupení SODI -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SportsOrganization",
-        "name": "Strnadel Motorsport",
-        "alternateName": "Strnadel",
-        "url": "https://strnadelmotorsport.cz/",
-        "logo": "https://strnadelmotorsport.cz/icon-512.png",
-        "image": "https://strnadelmotorsport.cz/icon-512.png",
-        "sport": "Karting",
-        "areaServed": ["Česká republika", "Slovensko", "Evropa"],
-        "email": "Motorsport.strnadel@gmail.com",
-        "telephone": "+420775177772",
-        "sameAs": [
-          "https://www.facebook.com/p/Motorsport-Strnadel-100067773919892/",
-          "https://www.instagram.com/strnadelmotorsport/"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "CZ"
-        }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://strnadelmotorsport.cz/#website",
+            "url": "https://strnadelmotorsport.cz/",
+            "name": "Strnadel Motorsport",
+            "inLanguage": "cs-CZ",
+            "publisher": { "@id": "https://strnadelmotorsport.cz/#tym" }
+          },
+          {
+            "@type": "SportsTeam",
+            "@id": "https://strnadelmotorsport.cz/#tym",
+            "name": "Strnadel Motorsport",
+            "alternateName": ["Strnadel", "Motokárový tým Strnadel Motorsport"],
+            "description": "Český motokárový (kartingový) tým s 25+ lety zkušeností, závodící v kategoriích Rotax, OK a KZ2 v ČR i zahraničí. Výhradní zastoupení motokár SODI pro Českou republiku.",
+            "url": "https://strnadelmotorsport.cz/",
+            "logo": "https://strnadelmotorsport.cz/icon-512.png",
+            "image": "https://strnadelmotorsport.cz/og-image.jpg",
+            "sport": "Karting",
+            "location": { "@type": "Country", "name": "Česká republika" },
+            "areaServed": ["Česká republika", "Slovensko", "Evropa"],
+            "email": "Motorsport.strnadel@gmail.com",
+            "telephone": "+420775177772",
+            "address": { "@type": "PostalAddress", "addressCountry": "CZ" },
+            "knowsAbout": ["Karting", "Motokáry", "Rotax Max Challenge", "SODI Kart", "Telemetrie"],
+            "sameAs": [
+              "https://www.facebook.com/p/Motorsport-Strnadel-100067773919892/",
+              "https://www.instagram.com/strnadelmotorsport/"
+            ]
+          },
+          {
+            "@type": "AutomotiveBusiness",
+            "@id": "https://strnadelmotorsport.cz/#sodi",
+            "name": "Strnadel Motorsport – výhradní zastoupení SODI pro ČR",
+            "description": "Prodej, náhradní díly a servis závodních motokár SODI Kart Racing v České republice.",
+            "url": "https://sodi.cz/",
+            "image": "https://strnadelmotorsport.cz/og-image.jpg",
+            "email": "Motorsport.strnadel@gmail.com",
+            "telephone": "+420775177772",
+            "address": { "@type": "PostalAddress", "addressCountry": "CZ" },
+            "areaServed": { "@type": "Country", "name": "Česká republika" },
+            "brand": { "@type": "Brand", "name": "SODI" },
+            "parentOrganization": { "@id": "https://strnadelmotorsport.cz/#tym" }
+          }
+        ]
       }
     </script>
   </head>

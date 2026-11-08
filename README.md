@@ -57,6 +57,10 @@ npm run build
 npm run preview
 ```
 
+`npm run build` po klasickém buildu ještě předrenderuje celou stránku do `dist/index.html`
+(`src/entry-server.jsx` + `scripts/prerender.mjs`). Vyhledávače tak vidí texty hned v HTML,
+ne až po spuštění JavaScriptu — důležité pro SEO. Prohlížeč pak stránku jen „oživí" (hydratace).
+
 ## Nasazení na GitHub Pages
 
 Repo: `https://github.com/lukasobrucnik/strnadelweb.git` — `base` ve `vite.config.js`
@@ -107,9 +111,10 @@ src/
 │  ├─ Hero.jsx           ← parallax hero, staggered reveal nadpisu, animovaná CTA
 │  ├─ Ticker.jsx          ← nekonečný „achievement" pruh
 │  ├─ Stats.jsx            ← 4 statistiky (animovaný counter „10+ let")
+│  ├─ SodiZastoupeni.jsx    ← sekce „Výhradní zastoupení SODI pro ČR" (odkaz na sodi.cz)
 │  ├─ TeamProfile.jsx       ← sekce „Kdo jsme" + 2 karty (Technické zázemí, Data a analýza)
 │  ├─ RacingProgram.jsx      ← Kategorie + Seriály a šampionáty
-│  ├─ Gallery.jsx             ← „Ze života týmu" — 8 fotek v gridu
+│  ├─ Gallery.jsx             ← „Ze života týmu" — 12 fotek v gridu
 │  ├─ Footer.jsx                ← patička s navigací, dokumenty, kontaktem
 │  ├─ Foto.jsx                   ← univerzální komponenta — fotka ze složky, nebo placeholder
 │  ├─ RevealOnScroll.jsx          ← obecný scroll-reveal wrapper (stagger pomocí delay)
@@ -131,7 +136,8 @@ fotky/
 ├─ kdo-jsme/               ← velká fotka v sekci „Kdo jsme"
 ├─ technicke-zazemi/        ← fotka v kartě „Technické zázemí"
 ├─ data-analyza/             ← fotka v kartě „Data a analýza"
-└─ galerie-1/ … galerie-8/    ← 8 fotek v sekci „Ze života týmu"
+├─ sodi/                      ← fotka v sekci „Výhradní zastoupení SODI"
+└─ galerie-1/ … galerie-12/   ← 12 fotek v sekci „Ze života týmu"
 ```
 
 **Stačí do dané podsložky nahrát JEDEN obrázek s JAKÝMKOLI názvem** (`.jpg`, `.jpeg`,

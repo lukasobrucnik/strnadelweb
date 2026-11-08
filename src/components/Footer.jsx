@@ -16,8 +16,8 @@ export default function Footer() {
           <RevealOnScroll className="flex flex-col gap-8">
             <img src={logoWhite} alt="Strnadel Motorsport" className="h-11 w-auto object-contain self-start" />
             <p className="font-body-md text-on-surface-variant text-sm leading-relaxed max-w-xs">
-              Profesionální kartingový tým působící v České republice i zahraničí. Pomáháme jezdcům růst,
-              zrychlovat a dosahovat jejich sportovních cílů.
+              Profesionální motokárový tým působící v České republice i zahraničí a výhradní zastoupení
+              motokár SODI pro ČR. Pomáháme jezdcům růst, zrychlovat a dosahovat jejich sportovních cílů.
             </p>
             <div className="flex gap-2">
               <div className="w-10 h-[3px] bg-racing-blue" />
@@ -33,6 +33,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               {[
                 ['#tym', 'O TÝMU'],
+                ['#sodi', 'ZASTOUPENÍ SODI'],
                 ['#zavodni-program', 'ZÁVODNÍ PROGRAM'],
                 ['#galerie', 'GALERIE'],
                 ['#kontakt', 'KONTAKT'],

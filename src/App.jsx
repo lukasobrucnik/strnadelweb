@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Ticker from './components/Ticker';
 import Stats from './components/Stats';
 import TeamProfile from './components/TeamProfile';
+import SodiZastoupeni from './components/SodiZastoupeni';
 import RacingProgram from './components/RacingProgram';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
@@ -43,6 +44,7 @@ export default function App() {
         <Hero />
         <Ticker />
         <Stats />
+        <SodiZastoupeni />
         <TeamProfile />
         <RacingProgram />
         <Gallery />
