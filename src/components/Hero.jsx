@@ -15,7 +15,7 @@ function AnimatedWord({ text, className }) {
   return (
     <motion.span variants={titleLine} initial="hidden" animate="visible" className={`inline-block ${className}`}>
       {text.split('').map((char, i) => (
-        <motion.span key={i} variants={letter} className="inline-block" style={{ transformPerspective: 600 }}>
+        <motion.span key={i} variants={letter} className="inline-block pr-[0.02em]" style={{ transformPerspective: 600 }}>
           {char}
         </motion.span>
       ))}
@@ -52,7 +52,7 @@ export default function Hero() {
             />
             Motokárový tým · Karting Team
           </motion.span>{' '}
-          <span className="block font-headline-lg text-[44px] md:text-[100px] leading-tight italic font-black uppercase tracking-tighter text-white drop-shadow-2xl">
+          <span className="block font-['Anybody',sans-serif] text-[44px] md:text-[100px] leading-[1.05] italic font-black uppercase tracking-normal text-white drop-shadow-2xl">
             <AnimatedWord text="STRNADEL" />{' '}
             <br />
             <AnimatedWord text="MOTORSPORT" className="text-phosphor-yellow" />
