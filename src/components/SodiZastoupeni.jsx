@@ -33,7 +33,7 @@ export default function SodiZastoupeni() {
 
           <RevealOnScroll delay={0.08}>
             <h2 className="font-headline-lg text-3xl md:text-5xl text-white italic uppercase leading-tight tracking-tighter">
-              Výhradní zastoupení <span className="text-phosphor-yellow">SODI</span>{' '}
+              Prodejce <span className="text-phosphor-yellow">SODI</span>{' '}
               <br />
               pro Českou republiku
             </h2>
@@ -41,7 +41,7 @@ export default function SodiZastoupeni() {
 
           <RevealOnScroll delay={0.16}>
             <p className="font-body-md text-on-surface-variant leading-relaxed text-base md:text-lg max-w-xl border-l-4 border-racing-blue pl-6">
-              Strnadel Motorsport je výhradním zástupcem francouzské značky SODI Kart Racing pro Českou
+              Strnadel Motorsport je prodejcem francouzské značky SODI Kart Racing pro Českou
               republiku. Motokáry SODI prodáváme a servisujeme jako tým, který na nich sám závodí.
             </p>
           </RevealOnScroll>

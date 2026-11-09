@@ -111,7 +111,7 @@ src/
 │  ├─ Hero.jsx           ← parallax hero, staggered reveal nadpisu, animovaná CTA
 │  ├─ Ticker.jsx          ← nekonečný „achievement" pruh
 │  ├─ Stats.jsx            ← 4 statistiky (animovaný counter „10+ let")
-│  ├─ SodiZastoupeni.jsx    ← sekce „Výhradní zastoupení SODI pro ČR" (odkaz na sodi.cz)
+│  ├─ SodiZastoupeni.jsx    ← sekce „Prodejce SODI pro ČR" (odkaz na sodi.cz)
 │  ├─ TeamProfile.jsx       ← sekce „Kdo jsme" + 2 karty (Technické zázemí, Data a analýza)
 │  ├─ RacingProgram.jsx      ← Kategorie + Seriály a šampionáty
 │  ├─ Gallery.jsx             ← „Ze života týmu" — 12 fotek v gridu
@@ -136,7 +136,7 @@ fotky/
 ├─ kdo-jsme/               ← velká fotka v sekci „Kdo jsme"
 ├─ technicke-zazemi/        ← fotka v kartě „Technické zázemí"
 ├─ data-analyza/             ← fotka v kartě „Data a analýza"
-├─ sodi/                      ← fotka v sekci „Výhradní zastoupení SODI"
+├─ sodi/                      ← fotka v sekci „Prodejce SODI"
 └─ galerie-1/ … galerie-12/   ← 12 fotek v sekci „Ze života týmu"
 ```
 

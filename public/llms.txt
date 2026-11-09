@@ -1,6 +1,6 @@
 # Strnadel Motorsport
 
-> Český motokárový (kartingový) tým s více než 25 lety zkušeností, působící v České republice, na Slovensku i v zahraničí. Strnadel Motorsport je zároveň výhradním zastoupením francouzské značky závodních motokár SODI Kart Racing pro Českou republiku.
+> Český motokárový (kartingový) tým s více než 25 lety zkušeností, působící v České republice, na Slovensku i v zahraničí. Strnadel Motorsport je zároveň prodejcem francouzské značky závodních motokár SODI Kart Racing pro Českou republiku.
 
 ## Tým
 
@@ -8,12 +8,12 @@
 - Kategorie: Mini 60, OK Junior, OK, KZ2, Rotax Micro Max, Rotax Mini Max, Rotax Junior, Rotax Senior
 - Seriály a šampionáty: Mistrovství České republiky (MČR), Mistrovství Slovenské republiky (MSR), Moravský pohár, Slovenský kartingový pohár, Rotax Max Challenge Central Europe (RMC-CE), Rotax Max Euro Trophy
 
-## Výhradní zastoupení SODI pro ČR
+## Prodejce SODI pro ČR
 
 - Prodej nových závodních motokár SODI
 - Náhradní díly, servis a technická podpora
 - Poradenství s výběrem šasi a podpora na závodech
-- Web zastoupení: https://sodi.cz/
+- Web prodeje SODI: https://sodi.cz/
 
 ## Kontakt
 

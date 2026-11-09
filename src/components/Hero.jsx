@@ -114,7 +114,7 @@ export default function Hero() {
             <span className="flex-1 bg-white" />
             <span className="flex-1 bg-racing-red" />
           </span>
-          Výhradní zastoupení SODI pro ČR →
+          Prodejce SODI pro ČR →
         </motion.a>
       </div>
 
