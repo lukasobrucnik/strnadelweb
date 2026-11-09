@@ -1,5 +1,5 @@
 const ITEMS = [
-  { dot: 'bg-phosphor-yellow', text: 'VÝHRADNÍ ZASTOUPENÍ SODI PRO ČR' },
+  { dot: 'bg-phosphor-yellow', text: 'PRODEJCE SODI PRO ČR' },
   { dot: 'bg-racing-blue', text: '25+ LET ZKUŠENOSTÍ' },
   { dot: 'bg-phosphor-yellow', text: 'ČESKO I ZAHRANIČÍ' },
   { dot: 'bg-tertiary', text: 'PROFESIONÁLNÍ TECHNICKÉ ZÁZEMÍ' },
